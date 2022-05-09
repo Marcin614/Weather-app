@@ -18,7 +18,7 @@ const APIIcon=(number_icon)=>{
 }
 
 const Weather = ()=>{
-    const city = input.value || 'Ciechanowiec'
+    const city = input.value || 'Warszawa'
     const URL = API_URL+city+API_Key+API_UNITS_METRIC
     fetch(URL)
         .then(res => res.json())

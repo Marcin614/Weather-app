@@ -11,7 +11,7 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(315deg, #2f1126 0%, #f0c403 74%);
+    background-image: linear-gradient(312deg, rgba(59,162,26,1) 0%, rgba(182,207,24,1) 50%, rgba(59,162,26,1) 100%);
     font-size: 20px;
 }
 
@@ -116,3 +116,35 @@ button:hover {
     font-size: 14px;
     color: tomato;
 }
+@media(max-width:800px){
+    .body{
+        width: 100vh;
+    }
+}
+@media (max-width: 532px){
+    .send{
+        margin-top: 20px;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: row;
+    }
+    .weather-info,.headings{
+        flex-direction: column;
+        font-size: 24px;
+        height:80%;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+    }
+    .headings{
+        flex-basis: 65%;
+        justify-content:left;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+    .weather-info{
+        flex-basis:35%;
+    }
+}
+
